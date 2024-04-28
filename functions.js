@@ -45,14 +45,17 @@ function checkStock(quantity, item) {
     if(quantity = 4 && item === "Coffee") {
         console.log("Coffee is stocked");
     }
-    if(quantity = 3 && item === "Tortillas") {
+    else if(quantity = 3 && item === "Tortillas") {
         console.log("Tortillas - running Low");
     }
-    if(quantity = 0 || item === "Cheese") {
+    else if(quantity = 0 || item === "Cheese") {
         console.log("Cheese - OUT of stock!");
     }
-    if(quantity = 1 && item === "Salsa") {
+    else if(quantity = 1 && item === "Salsa") {
         console.log("Salsa - running Low");
+    }
+    else {
+        console.log("Not included in this service.")
     }
 }
 
