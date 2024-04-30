@@ -43,7 +43,8 @@ console.log(firstName.startsWith("J"));
 var roomate1 = "Joe";
 var roomate2 = "Mike";
 
-// This method outputs the index of the string assigned to the variable.
+// This method will print out the character that is specified in the parentheses. In this case "M" is 0, "i" is 1, "k" is 2, and "e" is 3. 
+// So the output will be e
 console.log(roomate2.charAt(3));
 
 // This mehtod adds the strings assined to the variable to output a complete sentence in this line of code.

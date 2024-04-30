@@ -41,29 +41,28 @@ console.log(square(144));
 // 5: Write a function named checkStock that satisfies the following interaction pattern:
 // Hint: You will only write one checkStock function that checks the quantity and then prints the corresponding statement.
 
+
 function checkStock(quantity, item) {
-    if(quantity = 4 && item === "Coffee") {
-        console.log("Coffee is stocked");
+    if(quantity >= 4) {
+        console.log(item + " is stocked")
     }
-    else if(quantity = 3 && item === "Tortillas") {
-        console.log("Tortillas - running Low");
-    }
-    else if(quantity = 0 || item === "Cheese") {
-        console.log("Cheese - OUT of stock!");
-    }
-    else if(quantity = 1 && item === "Salsa") {
-        console.log("Salsa - running Low");
+    else if(quantity <= 3 && quantity >= 1) {
+        console.log(item + " - running LOW")
     }
     else {
-        console.log("Not included in this service.")
+        console.log(item + " - OUT of stock!")
     }
 }
+
+
 
 checkStock(4, "Coffee");
 // => "Coffee is stocked"
 
 checkStock(3, "Tortillas");
 // => "Tortillas - running LOW"
+
+
 
 checkStock(0, "Cheese");
 // => "Cheese - OUT of stock!"
